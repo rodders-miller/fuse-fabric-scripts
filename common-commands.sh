@@ -27,12 +27,7 @@ set-data-dir()  {
 
 
 set-resoure-dir() {
-	workingdir=$(pwd)
-	echo $(pwd)
-	cd "../ssb-common/src/main/resources/"
-	echo $(pwd)
-	resource_dir=$(pwd)
-	cd $workingdir;
+	resource_dir=$(<resource-dir.txt)
 }
 
 wait-for-available() {

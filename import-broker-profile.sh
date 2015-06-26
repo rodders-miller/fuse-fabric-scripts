@@ -9,7 +9,6 @@ profilepath="/fabric/fabric/profiles/mq/broker/ssb/broker.ssb/broker.profile"
 
 wait-for-available
 
-
 echo "creating the broker profile in version 1.0 so hawtio picks up on MQ configuration"
 #create the MQ configuration here
 $ssh2Fabric "fabric:mq-create --group ssb-broker ssb-broker"

@@ -1,0 +1,1 @@
+/c/workspace/code/ssb-ci/Function/ssb-common/src/main/resources
