@@ -12,4 +12,5 @@ echo "stop containers"
 #deletes containers
 $ssh2Fabric "fabric:container-stop ssb"
 $ssh2Fabric "fabric:container-stop ssb-broker"
+$ssh2Fabric "shutdown -- force"
 $ssh2Fabric "exit"

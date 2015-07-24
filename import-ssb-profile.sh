@@ -1,5 +1,12 @@
 #!/bin/bash
 
+#Set the fabric version removing here (reading from file)
+source common-commands.sh
+set-version
+set-version
+set-resoure-dir
+profilepath="/fabric/fabric/profiles/ssb/profile.profile"
+
 #
 # Allow different features txt to be used
 #
@@ -9,13 +16,6 @@ featurestxt="$resource_dir/deploy/features.txt"
 if [ "x$1" = "x" ]; then
 	featurestxt="$1"
 fi
-
-#Set the fabric version removing here (reading from file)
-source common-commands.sh
-set-version
-set-version
-set-resoure-dir
-profilepath="/fabric/fabric/profiles/ssb/profile.profile"
 
 wait-for-available
 

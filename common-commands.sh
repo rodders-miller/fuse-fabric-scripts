@@ -9,7 +9,7 @@ echo "Fuse cmd is $ssh2Fabric"
 
 # set clone dir for git clone  
 clonedir="/c/fuse-git-repo-clone"
-echo "Fuse cmd is $clonedir"
+echo "Fuse git clone is $clonedir"
 
 set-version() {
 	#create the fabric version removing the SNAPSHOT if present
